@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="play-all-model-animations.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="room" src="picture/360web.png">
+    </a-assets>
+
+    <a-text value="Night Club at Lungmor" position="-2 1.5 -2" animation="property: position; to: -3 2.5 -2 ; dur: 2000; easing: linear; loop: false"></a-text>
+    <a-text value="It's a place where people hang out at night. To relax and have fun is a place that has both music and many people." position="-5 2 -2.2" animation="property: position; to: -3 1.5 -2.2; dur: 2000; easing: linear; loop: false"></a-text>
+    <a-text value="hashtags & Lungmor" position="3 1.5 -2" animation="property: position; to: 2 2.5 -2 ; dur: 2000; easing: linear; loop: false"></a-text>
+    <a-text value="It's a popular place. where people come to do various activities at night To relax and have fun" position="0 2 -2.2" animation="property: position; to: 2 1.5 -2.2; dur: 2000; easing: linear; loop: false"></a-text>
+    
+    <a-sky color="#ECFFFF" src="#room" radius="40"></a-sky>
+
+    <a-sound src="music/Y2meta.app - funky town low quality (320 kbps).mp3" autoplay="true" position="0 2 5" volume="2" loop="true"></a-sound>
+
+    <a-gltf-model position="-15 -4 -3"  rotation="9 -8 -5" scale="3 3 3" src="models/no_drink_soviet_poster_1.gltf"></a-gltf-model>
+    <a-gltf-model position="-20.5 8.5 9.6"  rotation="9 -8 -5" scale="0.1 0.1 0.1" src="models/bird.gltf" animation__rotation="property: rotation; to: 0 360 0; loop: true; dur: 2000"></a-gltf-model>
+    <a-gltf-model position="1.6 1.9 0.3"  rotation="9 -8 -5" scale="0.1 0.1 0.1" src="models/spooky_ghost.gltf" animation__rotation="property: rotation; to: 0 360 0; loop: true; dur: 2000"></a-gltf-model>
+
+  </a-scene>
+</body>
+</html>
